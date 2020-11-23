@@ -18,7 +18,11 @@ class App extends Component {
   render() {
     return (
       <View style={styles.mainView}>
-        <Header name={this.state.appName} />
+        {/* <Header name={this.state.appName} /> */}
+        {/* touch 이벤트는 Text 컴포넌트에서도 작동이 가능하다. */}
+        <Text style={styles.mainText} onPress={() => alert('text touch event')}>
+          hello world
+        </Text>
       </View>
     );
   }
