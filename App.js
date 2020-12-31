@@ -53,14 +53,14 @@ class App extends Component {
           //? disabled 기능
           editable={true}
         />
-        <Button title="Add Text Input" onPress={this.onAddTextInput} />
+        {/* <Button title="Add Text Input" onPress={this.onAddTextInput} />
         <ScrollView style={{width: '100%'}}>
           {this.state.alphabet.map((item, index) => (
             <Text style={styles.mainText} key={index}>
               {item}
             </Text>
           ))}
-        </ScrollView>
+        </ScrollView> */}
       </View>
     );
   }
