@@ -15,6 +15,7 @@ import {
   ScrollView,
   TextInput,
 } from 'react-native';
+import PickerComponent from './src/picker';
 class App extends Component {
   state = {
     myTextInput: '',
@@ -39,6 +40,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.mainView}>
+        <PickerComponent />
         <TextInput
           style={styles.input}
           value={this.state.myTextInput}
